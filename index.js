@@ -13,9 +13,8 @@ const join = async () => {
   }
 };
 
-const meow = () => {
-  bot.chat.postMessage({ channel, text: 'meow' });
-};
+const meow = () => bot.chat.postMessage({ channel, text: 'meow' });
+
 const getNextMeow = () =>
   Math.floor(Date.now() + Math.random() * Math.floor(10000000));
 
